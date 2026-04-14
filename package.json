@@ -1,16 +1,13 @@
 {
   "name": "nullhub-site",
   "version": "1.0.0",
-  "main": "site-server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node site-server.js",
-    "dev": "node site-server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.19.2",
     "dotenv": "^16.4.5"
-  },
-  "engines": {
-    "node": "18.x"
   }
 }
+

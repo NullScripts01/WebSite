@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const API_URL = process.env.API_URL || 'http://localhost:3001';
 
 // Serve a página principal injetando a API_URL
@@ -413,7 +413,7 @@ app.get('/', (req, res) => {
 </html>`);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`✅ Site rodando na porta ${PORT}`);
   console.log(`📡 Consumindo API: ${API_URL}`);
 });
